@@ -1,14 +1,14 @@
-package deloitte.androidhelper;
+package syam.androidhelper;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Toast;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
-import deloitte.sensorhelper.HeartRateSensor;
+import deloitte.androidhelper.R;
+import androidhelper.sensorhelper.HeartRateSensor;
 
 public class MainActivity extends Activity {
 

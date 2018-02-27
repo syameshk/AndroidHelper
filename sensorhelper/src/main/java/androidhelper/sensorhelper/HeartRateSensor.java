@@ -1,11 +1,10 @@
-package deloitte.sensorhelper;
+package androidhelper.sensorhelper;
 
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.content.Context;
-import android.util.Log;
 
 /**
  * Created by skunnummal on 2/21/2018.
