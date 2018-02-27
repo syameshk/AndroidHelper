@@ -7,7 +7,7 @@ import android.util.Log;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import deloitte.androidhelper.R;
+import syam.androidhelper.R;
 import androidhelper.sensorhelper.HeartRateSensor;
 
 public class MainActivity extends Activity {
