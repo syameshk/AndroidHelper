@@ -1,1 +1,1 @@
-include ':app', ':sensorhelper'
+include ':app', ':sensorhelper', ':bluetoothhelper'
