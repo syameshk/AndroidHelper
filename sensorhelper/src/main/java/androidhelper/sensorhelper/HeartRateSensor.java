@@ -15,7 +15,7 @@ import android.util.Log;
 import com.unity3d.player.UnityPlayer;
 
 /**
- * Created by skunnummal on 2/21/2018.
+ * Created by Syamesh K on 2/21/2018.
  */
 
 public class HeartRateSensor {
@@ -27,12 +27,18 @@ public class HeartRateSensor {
 
     private float heatRate = 0;
 
-    public void Init(Activity activity){
+    public void Init(Activity activity, String callbackObjectName ){
+        this.callbackObjectName = callbackObjectName;
         sensorManager = (SensorManager) activity.getSystemService(Context.SENSOR_SERVICE);
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_HEART_RATE);
         if(sensor == null){
             Log.d(TAG,"Sensor is null, check for permission");
+            UnityPlayer.UnitySendMessage(callbackObjectName,"defaultCallbackMethode", "Sensor is null, check for permission");
         }
+    }
+
+    public void Init(Activity activity ){
+        Init(activity,"DefaultCallbackClass");
     }
 
     public int CheckPermission(Activity activity){
